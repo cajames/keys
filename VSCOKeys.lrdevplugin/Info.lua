@@ -22,7 +22,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 return {
 
-  LrSdkVersion = 4.0,
+  LrSdkVersion = 6.0,
   LrSdkMinimumVersion = 3.0, -- minimum SDK version required by this plug-in
 
   LrToolkitIdentifier = 'com.VSCO.vscokeys',
@@ -43,7 +43,7 @@ return {
     file = "ActivateKeys.lua",
   },
 
-  VERSION = { major=1, minor=0, revision=7, build=0, },
+  VERSION = { major=1, minor=0, revision=8, build=0, },
 
 }
 
