@@ -43,7 +43,7 @@ return {
     file = "ActivateKeys.lua",
   },
 
-  VERSION = { major=1, minor=0, revision=8, build=0, },
+  VERSION = { major=1, minor=0, revision=9, build=0, }
 
 }
 

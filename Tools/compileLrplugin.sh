@@ -18,9 +18,11 @@
 #  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 
+rm -rf ..Build/VSCOKeys.lrplugin
+mkdir -p ../Build/VSCOKeys.lrplugin
 cp -r ../VSCOKeys.lrdevplugin/ ../Build/VSCOKeys.lrplugin/
 rm -f ../Build/VSCOKeys.lrplugin/*.log
 rm -f ../Build/VSCOKeys.lrplugin/**/*.log
 rm -f ../Build/VSCOKeys.lrplugin/skey.key
-for file in ../Build/VSCOKeys.lrplugin/*.lua; do ./luac_514_32bit -o $file $file; done;
-for file in ../Build/VSCOKeys.lrplugin/**/*.lua; do ./luac_514_32bit -o $file $file; done;
+for file in ../Build/VSCOKeys.lrplugin/*.lua; do ./luac -o $file $file; done;
+for file in ../Build/VSCOKeys.lrplugin/**/*.lua; do ./luac -o $file $file; done;

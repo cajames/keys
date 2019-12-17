@@ -65,35 +65,13 @@
                         <distributionFile>
                             <origin>../Build/VSCOKeys.lrplugin</origin>
                         </distributionFile>
+                        <distributionFile>
+                            <origin>../Resources/Presets</origin>
+                        </distributionFile>
                     </distributionFileList>
                     <actionList>
                         <changePermissions permissions="0777" files="*"/>
                     </actionList>
-                </folder>
-                <folder>
-                    <description>Presets</description>
-                    <destination>${user_home_directory}/Library/Application Support/Adobe/Lightroom/Develop Presets</destination>
-                    <name>presets</name>
-                    <platforms>osx</platforms>
-                    <distributionFileList>
-                        <distributionDirectory>
-                            <origin>../Resources/Presets/VSCO Keys</origin>
-                        </distributionDirectory>
-                    </distributionFileList>
-                    <actionList>
-                        <changePermissions permissions="0777" files="*"/>
-                    </actionList>
-                </folder>
-                <folder>
-                    <description>Win Presets</description>
-                    <destination>${windows_folder_appdata}/Adobe/Lightroom/Develop Presets</destination>
-                    <name>winpresets</name>
-                    <platforms>windows</platforms>
-                    <distributionFileList>
-                        <distributionDirectory>
-                            <origin>../Resources/Presets/VSCO Keys</origin>
-                        </distributionDirectory>
-                    </distributionFileList>
                 </folder>
             </folderList>
             <startMenuShortcutList>
@@ -441,6 +419,7 @@ del "%~f0"</text>
     <osxApplicationBundleIcon>../VSCOKeys/VSCOKeys/keysicon.icns</osxApplicationBundleIcon>
     <osxApplicationBundleIdentifier>com.vsco.vscokeys1</osxApplicationBundleIdentifier>
     <osxUninstallerApplicationBundleIcon>../VSCOKeys/VSCOKeys/keysicon.icns</osxUninstallerApplicationBundleIcon>
+    <osxSigningPkcs12File>${build_project_directory}/osx-signing.p12</osxSigningPkcs12File>
     <!-- OUTPUT of installers goes here -->
     <outputDirectory>../Build</outputDirectory>
     <customLanguageFileList>

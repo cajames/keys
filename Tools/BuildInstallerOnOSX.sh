@@ -26,4 +26,4 @@
 "/Applications/BitRock/bin/Builder.app/Contents/MacOS/installbuilder.sh" build VSCOKeys.xml osx
 
 #Build windows installer
-"/Applications/BitRock/bin/Builder.app/Contents/MacOS/installbuilder.sh" build VSCOKeys.xml windows
+# "/Applications/BitRock/bin/Builder.app/Contents/MacOS/installbuilder.sh" build VSCOKeys.xml windows

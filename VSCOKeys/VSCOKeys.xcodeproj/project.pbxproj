@@ -94,7 +94,7 @@
 		308C1E3715D2EEB600F2F7BE /* List_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 308C1E3615D2EEB600F2F7BE /* List_Hover.png */; };
 		3098C65B15C9C3B100ECCA65 /* BackgroundedImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3098C65A15C9C3B100ECCA65 /* BackgroundedImageCell.m */; };
 		3098C65F15C9DBA400ECCA65 /* RowColumnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3098C65E15C9DBA400ECCA65 /* RowColumnTableView.m */; };
-		30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30F4119C1610F883001C731D /* ProximaNovaVSCO-Bold.otf */; };
+		30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in Copy Files */ = {isa = PBXBuildFile; fileRef = 30F4119C1610F883001C731D /* ProximaNovaVSCO-Bold.otf */; };
 		30F99FDD15F7EA700093FB62 /* VSCOSimple_LR3.vkeys in Resources */ = {isa = PBXBuildFile; fileRef = 30F99FD515F7EA6F0093FB62 /* VSCOSimple_LR3.vkeys */; };
 		30F99FDF15F7EA700093FB62 /* VSCOSimple.vkeys in Resources */ = {isa = PBXBuildFile; fileRef = 30F99FD715F7EA6F0093FB62 /* VSCOSimple.vkeys */; };
 		30F99FE115F7EA700093FB62 /* VSCOStandard_LR3.vkeys in Resources */ = {isa = PBXBuildFile; fileRef = 30F99FD915F7EA6F0093FB62 /* VSCOStandard_LR3.vkeys */; };
@@ -120,14 +120,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3056AA1015DAE7DC00205B11 /* CopyFiles */ = {
+		3056AA1015DAE7DC00205B11 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = Font;
 			dstSubfolderSpec = 7;
 			files = (
-				30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in CopyFiles */,
+				30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		308283F8159ED126008A2997 /* CopyFiles */ = {
@@ -157,7 +158,6 @@
 		304A7B8715994DF700DB7327 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		304A7B8915994DF700DB7327 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		304A7B8A15994DF700DB7327 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		304A7B8D15994DF800DB7327 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		304A7B9415994DF800DB7327 /* VSCOKeysTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VSCOKeysTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		304A7B9515994DF800DB7327 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		304A7B9C15994DF800DB7327 /* VSCOKeysTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VSCOKeysTests-Info.plist"; sourceTree = "<group>"; };
@@ -289,6 +289,7 @@
 		30F99FDB15F7EA6F0093FB62 /* VSCOStandard.vkeys */ = {isa = PBXFileReference; lastKnownFileType = file; path = VSCOStandard.vkeys; sourceTree = "<group>"; };
 		30F99FE415F7F33A0093FB62 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		30F99FE515F7F33A0093FB62 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B71B9AED23A8D41800AC08B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -634,7 +635,7 @@
 				304A7B6F15994DF700DB7327 /* Sources */,
 				304A7B7015994DF700DB7327 /* Frameworks */,
 				304A7B7115994DF700DB7327 /* Resources */,
-				3056AA1015DAE7DC00205B11 /* CopyFiles */,
+				3056AA1015DAE7DC00205B11 /* Copy Files */,
 				307F60E415B8917F00B3E2D2 /* ShellScript */,
 			);
 			buildRules = (
@@ -690,14 +691,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0640;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 1120;
 			};
 			buildConfigurationList = 304A7B6D15994DF700DB7327 /* Build configuration list for PBXProject "VSCOKeys" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 304A7B6815994DF700DB7327;
 			productRefGroup = 304A7B7415994DF700DB7327 /* Products */;
@@ -793,7 +795,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" != \"Debug\" ]; then\nrm ${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Test_*.vkeys\nfi";
+			shellScript = "if [ \"$CONFIGURATION\" != \"Debug\" ]; then\nrm ${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Test_*.vkeys\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -895,7 +897,7 @@
 		304A7B8C15994DF800DB7327 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				304A7B8D15994DF800DB7327 /* en */,
+				B71B9AED23A8D41800AC08B2 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -915,12 +917,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -930,7 +952,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
@@ -943,16 +967,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
@@ -963,6 +1008,7 @@
 		304A7BA615994DF800DB7327 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: WebGlow IT Services Pty Ltd (HZ2936LH5W)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VSCOKeys/VSCOKeys-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -971,6 +1017,7 @@
 				);
 				INFOPLIST_FILE = "VSCOKeys/VSCOKeys-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -979,10 +1026,12 @@
 		304A7BA715994DF800DB7327 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: WebGlow IT Services Pty Ltd (HZ2936LH5W)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VSCOKeys/VSCOKeys-Prefix.pch";
 				INFOPLIST_FILE = "VSCOKeys/VSCOKeys-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -997,6 +1046,7 @@
 				GCC_PREFIX_HEADER = "VSCOKeys/VSCOKeys-Prefix.pch";
 				INFOPLIST_FILE = "VSCOKeysTests/VSCOKeysTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "VSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1013,6 +1063,7 @@
 				GCC_PREFIX_HEADER = "VSCOKeys/VSCOKeys-Prefix.pch";
 				INFOPLIST_FILE = "VSCOKeysTests/VSCOKeysTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "VSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1023,6 +1074,7 @@
 		30828404159ED126008A2997 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1031,6 +1083,7 @@
 		30828405159ED126008A2997 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
