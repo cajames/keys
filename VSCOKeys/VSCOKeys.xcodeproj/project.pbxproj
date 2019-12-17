@@ -94,7 +94,7 @@
 		308C1E3715D2EEB600F2F7BE /* List_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 308C1E3615D2EEB600F2F7BE /* List_Hover.png */; };
 		3098C65B15C9C3B100ECCA65 /* BackgroundedImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3098C65A15C9C3B100ECCA65 /* BackgroundedImageCell.m */; };
 		3098C65F15C9DBA400ECCA65 /* RowColumnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3098C65E15C9DBA400ECCA65 /* RowColumnTableView.m */; };
-		30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30F4119C1610F883001C731D /* ProximaNovaVSCO-Bold.otf */; };
+		30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in Copy Files */ = {isa = PBXBuildFile; fileRef = 30F4119C1610F883001C731D /* ProximaNovaVSCO-Bold.otf */; };
 		30F99FDD15F7EA700093FB62 /* VSCOSimple_LR3.vkeys in Resources */ = {isa = PBXBuildFile; fileRef = 30F99FD515F7EA6F0093FB62 /* VSCOSimple_LR3.vkeys */; };
 		30F99FDF15F7EA700093FB62 /* VSCOSimple.vkeys in Resources */ = {isa = PBXBuildFile; fileRef = 30F99FD715F7EA6F0093FB62 /* VSCOSimple.vkeys */; };
 		30F99FE115F7EA700093FB62 /* VSCOStandard_LR3.vkeys in Resources */ = {isa = PBXBuildFile; fileRef = 30F99FD915F7EA6F0093FB62 /* VSCOStandard_LR3.vkeys */; };
@@ -120,14 +120,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3056AA1015DAE7DC00205B11 /* CopyFiles */ = {
+		3056AA1015DAE7DC00205B11 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = Font;
 			dstSubfolderSpec = 7;
 			files = (
-				30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in CopyFiles */,
+				30F0B69E161133C800F754AC /* ProximaNovaVSCO-Bold.otf in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		308283F8159ED126008A2997 /* CopyFiles */ = {
@@ -634,7 +635,7 @@
 				304A7B6F15994DF700DB7327 /* Sources */,
 				304A7B7015994DF700DB7327 /* Frameworks */,
 				304A7B7115994DF700DB7327 /* Resources */,
-				3056AA1015DAE7DC00205B11 /* CopyFiles */,
+				3056AA1015DAE7DC00205B11 /* Copy Files */,
 				307F60E415B8917F00B3E2D2 /* ShellScript */,
 			);
 			buildRules = (
@@ -794,7 +795,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" != \"Debug\" ]; then\nrm ${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Test_*.vkeys\nfi";
+			shellScript = "if [ \"$CONFIGURATION\" != \"Debug\" ]; then\nrm ${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Test_*.vkeys\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
