@@ -441,6 +441,7 @@ del "%~f0"</text>
     <osxApplicationBundleIcon>../VSCOKeys/VSCOKeys/keysicon.icns</osxApplicationBundleIcon>
     <osxApplicationBundleIdentifier>com.vsco.vscokeys1</osxApplicationBundleIdentifier>
     <osxUninstallerApplicationBundleIcon>../VSCOKeys/VSCOKeys/keysicon.icns</osxUninstallerApplicationBundleIcon>
+    <osxSigningPkcs12File>${build_project_directory}/osx-signing.p12</osxSigningPkcs12File>
     <!-- OUTPUT of installers goes here -->
     <outputDirectory>../Build</outputDirectory>
     <customLanguageFileList>
