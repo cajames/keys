@@ -185,8 +185,7 @@ function Client:loop()
               local wbDict = { WhiteBalance = "Custom" }
 
               photo.catalog:withWriteAccessDo("VSCO Keys", function()
-                local preset = LrApplication.addDevelopPresetForPlugin(_PLUGIN, "WhiteBalance   Custom   Custom", wbDict)
-                photo:applyDevelopPreset(preset, _PLUGIN)
+                photo:applyDevelopSettings(wbDict)
               end, {asynchronous = true})
 
               -- requery the photo data to get the current whitebalance data
@@ -203,8 +202,7 @@ function Client:loop()
               logging:log("Locking constrain to warp.")
 
               photo.catalog:withWriteAccessDo("VSCO Keys", function()
-                local preset = LrApplication.addDevelopPresetForPlugin(_PLUGIN, "Crop Constrain To Warp   Yes   Yes", wbDict)
-                photo:applyDevelopPreset(preset, _PLUGIN)
+                photo:applyDevelopSettings(wbDict)
               end, {asynchronous = true})
 
               -- requery the photo data to get the current constrain data
@@ -249,17 +247,9 @@ function Client:loop()
           if (table.count(edits) > 0) then
             photo.catalog:withWriteAccessDo("VSCO Keys", function()
 
-              -- In LRC 9.3, these properties below get overwritten when applying any plugin edit preset. 
-              -- As a fix, we're copying them from the existing image settings
-              -- and setting them back onto the image as part of the edit preset
-              -- This feels like a bug on the SDK, as this doesn't happen to any other property.
-              -- Raised here: https://community.adobe.com/t5/lightroom-classic/all-corrections-get-overwritten-when-calling-applydeveloppreset-with-a-plugin-preset-in-lrc-9-3/m-p/11245013?page=1#M191778
-              edits.PaintBasedCorrections = photoData.PaintBasedCorrections
-              edits.CircularGradientBasedCorrections = photoData.CircularGradientBasedCorrections
-              edits.GradientBasedCorrections = photoData.GradientBasedCorrections
-
-              local preset = LrApplication.addDevelopPresetForPlugin(_PLUGIN, editText, edits)
-              photo:applyDevelopPreset(preset, _PLUGIN)
+              -- Changed implementation from using presets to directly applying edits.
+              -- This also saves on a lot of redundant plugin presets being created.
+              photo:applyDevelopSettings(edits);
 
               logging:log("Edit Applied " .. to_string(edits))
             end, {asynchronous = true})
