@@ -692,6 +692,12 @@
 			attributes = {
 				LastTestingUpgradeCheck = 0640;
 				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					304A7B7215994DF700DB7327 = {
+						DevelopmentTeam = HZ2936LH5W;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 304A7B6D15994DF700DB7327 /* Build configuration list for PBXProject "VSCOKeys" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1008,7 +1014,10 @@
 		304A7BA615994DF800DB7327 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: WebGlow IT Services Pty Ltd (HZ2936LH5W)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = HZ2936LH5W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VSCOKeys/VSCOKeys-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1017,8 +1026,10 @@
 				);
 				INFOPLIST_FILE = "VSCOKeys/VSCOKeys-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MARKETING_VERSION = 2.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.VSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1026,13 +1037,18 @@
 		304A7BA715994DF800DB7327 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: WebGlow IT Services Pty Ltd (HZ2936LH5W)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = HZ2936LH5W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VSCOKeys/VSCOKeys-Prefix.pch";
 				INFOPLIST_FILE = "VSCOKeys/VSCOKeys-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MARKETING_VERSION = 2.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.VSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

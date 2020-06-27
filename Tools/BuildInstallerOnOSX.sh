@@ -23,6 +23,7 @@
 #2. Put app into correct folders (OSX app to ../Build/ and Windows app to ../Build/VSCOKeys)
 
 #Build OSX installer
+./compileLrplugin.sh
 "/Applications/BitRock/bin/Builder.app/Contents/MacOS/installbuilder.sh" build VSCOKeys.xml osx
 
 #Build windows installer

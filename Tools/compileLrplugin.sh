@@ -18,7 +18,7 @@
 #  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 
-rm -rf ..Build/VSCOKeys.lrplugin
+rm -rf ../Build/VSCOKeys.lrplugin
 mkdir -p ../Build/VSCOKeys.lrplugin
 cp -r ../VSCOKeys.lrdevplugin/ ../Build/VSCOKeys.lrplugin/
 rm -f ../Build/VSCOKeys.lrplugin/*.log
